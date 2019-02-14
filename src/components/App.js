@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListContacts from './ListContacts';
 
 const contacts = [
   {
@@ -25,7 +26,9 @@ const contacts = [
 class App extends Component {
   render() {
     return (
-      <div></div>
+      <div>
+        <ListContacts contacts={contacts}/>
+      </div>
     );
   }
 }
